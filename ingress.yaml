@@ -1,16 +1,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nginx-ingress-test
-
+  name: whoami
+  namespace: traefik-v2
 spec:
   rules:
     - http:
         paths:
-          - path: /
-            pathType: Exact
+          - path: /whoami
+            pathType: Prefix
             backend:
               service:
-                name: nginx-service
+                name: whoami
                 port:
                   number: 80

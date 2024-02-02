@@ -2,6 +2,11 @@
 
 See https://www.youtube.com/watch?v=-YwOG515M9M
 
+## Steps
+
+### 1.
+helm install --namespace=traefik-v2 traefik traefik/traefik --values=values.yml
+
 ## Docs used in demo
 
 - Kubernetes Deployment: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/

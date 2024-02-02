@@ -1,0 +1,7 @@
+# values.yaml
+---
+service:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: nlb
+globalArguments:
+- "--api.insecure=true"
